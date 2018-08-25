@@ -1,0 +1,16 @@
+<div class = "container">
+  <div *ngFor = "let item of items">
+    <div class = 'col-md-3'>
+      {{item.itemName}}
+      {{item.price}}
+      {{item.description}}
+      {{item.serialNumber}}
+      {{item.superMarketID}}
+    </div>
+
+    <div class = 'col-md-3'>
+      <input type = "button" (click)="addToCart(item._id)" value = "Add to Cart" class="btn btn-success"/>
+    </div>
+
+  </div>
+</div>
