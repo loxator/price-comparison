@@ -18,6 +18,11 @@ const ItemSchema = mongoose.Schema({
         required:true
     },
 
+    category:{
+        type:String,
+        required:true
+    },
+
     superMarketID:{
         type:Number,
         required:true
